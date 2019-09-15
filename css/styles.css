@@ -1,0 +1,23 @@
+.navbar {
+    background-color: rgba(160, 185, 192, .4)
+}
+
+.nav-container {
+    background-color: rgba(160, 185, 192, .4)
+}
+
+.jumbotron {
+    background-image: url(/img/homepage.jpg);
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 768px ) {
+ .jumbotron {
+     padding-top: 325px;
+ }
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+}
