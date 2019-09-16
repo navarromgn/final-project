@@ -2,19 +2,15 @@
     background-color: rgba(160, 185, 192, .4)
 }
 
-.nav-container {
-    background-color: rgba(160, 185, 192, .4)
-}
-
 .jumbotron {
-    background-image: url(/img/homepage.jpg);
+    background-image: url(/img/computer.jpeg);
     background-attachment: fixed;
+    background-size: cover;
 }
 
-@media screen and (min-width: 768px ) {
- .jumbotron {
-     padding-top: 325px;
- }
+.box {
+    margin-top: 200px;
+    background-color: rgba(160, 185, 192, .4)
 }
 
 .icon {
