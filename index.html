@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
+	<title>Project</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/62a795012c.js"></script>
@@ -14,50 +14,51 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="jumbotron" style="height: 600px">
+	<div id="home" class="jumbotron" style="height: 600px">
 		
-			<!-- jumbotron -->
-			<div class="container container-box">
-				<div class="box">
-					<h1>MGN Dev.</h1>
-					<p>What I do</p>
-					<p><a class="btn btn-default btn-lg" href="#" role="button">Learn More!</a></p>
-				</div>
+		<!-- jumbotron -->
+		<div class="container container-box">
+			<div class="box">
+				<h1>MGN Dev.</h1>
+				<p>Web Designs</p>
+				<p><a class="btn btn-default btn-lg" href="#projects" role="button">See more!</a></p>
 			</div>
 		</div>
 	</div>
+	
 	<div class="container nav-container">
-		<!-- nav bar -->
+	<!-- nav bar -->
 
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
   
-				<!-- navbar header -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+			<!-- navbar header -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
 				  		<!-- the hamburger -->
-				  			<span class="sr-only">Toggle navigation</span>
-				  			<span class="icon-bar"></span>
-				  			<span class="icon-bar"></span>
-				  			<span class="icon-bar"></span>
-						</button>
-  
-						<p id="brandName" class="navbar-text">MGN Dev.</p>
-			  		</div>
+				  		<span class="sr-only">Toggle navigation</span>
+				  		<span class="icon-bar"></span>
+				  		<span class="icon-bar"></span>
+				  		<span class="icon-bar"></span>
+					</button>
+					<p id="brandName" class="navbar-text">MGN Dev.</p>
+			  	</div>
 			  		<!-- Collect the nav links, forms, and other content for toggling -->
-			  		<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-				  			<li><a href="#">About</a></li>
-				  			<li><a href="#">Work</a></li>
-				  			<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
+			  	<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home" class="btn btn-default">Home</a></li>
+						<li><a href="#projects" class="btn btn-default" role="button">Projects</a></li>
+						<li><a href="#about" class="btn btn-default" role="button">About</a></li>
+						<li><a href="#contact" class="btn btn-default" role="button">Contact</a></li>
+					</ul>
 				</div>
-			</nav>
+			</div>
+		</nav>
+	</div>
 
 	<!-- my work -->
-	<div class="container work-container">
+	<div class="container-fluid">
+	<div id="projects" class="container work-container">
 		<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-xs-12 col-md-4 work-h1">
@@ -65,79 +66,155 @@
 			</div>
 			<div class="col-md-4"></div>
 		</div>
-		<div class="row about-about">
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10 col-xs-12">
-					<div class="col-xs-12 col-md-4">
-						<a href="#" class="thumbnail">
-							<img class="img-work" src="/img/petstore_logo.png" alt="#">
-							<h1>Pet Store</h1>
-						</a>
-					</div>
-				<div class="col-xs-12 col-md-4">
-						<a href="#" class="thumbnail">
-							<img class="img-work" src="/img/RestauranteThumbnail.png" alt="#">
-							<h1>Restaurante</h1>
-						</a>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<a href="#" class="thumbnail">
-							<img class="img-work" src="/img/taco-logo.png" alt="#">
-							<h1>Taco Website</h1>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-1"></div>
-				</div>
+		<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-xs-12 col-md-10">
+
+			<div class="col-xs-12 col-md-4">
+				<a href="#" class="thumbnail" target="_blank">
+					<img class="img-thumbnail img-work" src="/img/petstore_logo.png" alt="#">
+					<h1>Pet Store</h1>
+				</a>
 			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<a href="https://navarromgn.github.io/mfw-restaurante/" class="thumbnail" target="_blank">
+					<img class="img-thumbnail img-work" src="/img/RestauranteThumbnail.png" alt="#">
+					<h1>Restaurante</h1>
+				</a>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<a href="#" class="thumbnail" target="_blank">
+					<img class="img-thumbnail img-work" src="/img/taco-logo.png" alt="#">
+					<h1>In progress!</h1>
+				</a>
+			</div>
+
+		</div>
+		<div class="col-md-1"></div>
 		</div>
 
 		<!-- how we work -->
-		<div class="row">
-				<div class="col-xs-6 col-md-3 col-icon">
-					<img class="icon" src="/img/users.png" alt="#">
-					<h1>Think User!</h1>
-					<p>Consumer oriented websites.</p>
-				</div>
-				<div class="col-xs-6 col-md-3 col-icon">
-					<img class="icon" src="img/aford-icon.png" alt="#">
-					<h1>Affordable!</h1>
-					<p>Our prices are amazing!</p>
-				</div>
-				<div class="col-xs-6 col-md-3 col-icon">
-					<img class="icon" src="img/time-icon.png" alt="#">
-					<h1>Timely!</h1>
-					<p>Deadlines always met!</p>
-				</div>
-					<div class="col-xs-6 col-md-3 col-icon">
-					<img class="icon" src="img/local-icon.jpg" alt="#">
-					<h1>Local!</h1>
-					<p>Support local business.</p>
-				</div>
-			</div>
-		</div>
 
-	<!-- about page -->
-	<div class="container about-container">
+		<div class="row work-row">
+		<div class="col-xs-6 col-md-3 col-icon">
+			<img class="icon" src="/img/users.png" alt="#">
+			<h1>Think User!</h1>
+			<p>Consumer oriented websites.</p>
+		</div>
+		<div class="col-xs-6 col-md-3 col-icon">
+			<img class="icon" src="img/aford-icon.png" alt="#">
+			<h1>Affordable!</h1>
+			<p>Our prices are amazing!</p>
+		</div>
+		<div class="col-xs-6 col-md-3 col-icon">
+			<img class="icon" src="img/time-icon.png" alt="#">
+			<h1>Timely!</h1>
+			<p>Deadlines always met!</p>
+		</div>
+		<div class="col-xs-6 col-md-3 col-icon">
+			<img class="icon" src="img/local-icon.jpg" alt="#">
+			<h1>Local!</h1>
+			<p>Support local business.</p>
+		</div>
+		</div>
+	</div>
+
+		<!-- about page -->
+		<div id="about" class="container about-container">
 		<div class="jumbotron about-jumbo">
-		
-		
 			<div class="container about-container">
 				<div class="row about-row">
 					<div class="col-sx-6 col-md-4">
 						<img class="img-rounded" src="/img/profile.JPG" alt="#">
 					</div>
 					<div class="col-xs-6 col-md-8">
-						<h1>Me</h1>
+						<h1>Maria G. Navarro</h1>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odio optio sed nisi. Saepe nesciunt voluptas adipisci, distinctio illum magnam soluta modi ducimus sint perspiciatis? Praesentium magnam cupiditate recusandae dolore asperiores tempora exercitationem nostrum cum!</p>
 					</div>
 				</div>
 			</div>
 		</div>
+		</div>
+		
 
+		<!-- contact page -->
+		<div id="contact" class="container contact-container">
+			<div class="row">
+				<div class="row con-me">
+					<h1>Contact Me</h1>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-xs-12 col-md-4 col-info">
+					<div class="row">
+						<form action="/action_page.php">
+
+							<label for="fname">First Name</label>
+							<br>
+							<input type="text" id="fname" name="firstname" placeholder="Your name....">
+							<br>
+			
+							<label for="lname">Last Name</label>
+							<br>
+							<input type="text" id="lname" name="lastname" placeholder="Your last mame...">
+							<br>
+			
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+							<br>
+							
+							<label for="subject">Subject</label>
+							<textarea type="text" name="subject" placeholder="Message..." style="height: 100px"  id="subject"></textarea>
+			
+							<button class="btn">Send Message!</button>
+			
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-xs-12 col-md-4 col-info">
+					<div class="row info-row">
+						<address>
+							MGN DEV. <br>
+							700 Van Ness Ave, <br>
+							Fresno, CA 93721
+						</address>
+					</div>
+					<div class="row info-row">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6040610939754!2d-119.78796568522246!3d36.73206927923255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise%20Industries!5e0!3m2!1sen!2sus!4v1568880103811!5m2!1sen!2sus" width="400" height="350" frameborder="0" style="border-radius:20px;" allowfullscreen=""></iframe>
+					</div>					
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+
+		<!-- footer -->
+
+	<div class="nav navbar nav-footer">
+		<div class="row footer">
+			<div class="col-md-12">
+				<div class="col-md-4"></div>
+				<div class="col-xs-12 col-md-4">
+					<div class="row footer-box social">
+						<a href="https://twitter.com/m_navarro20" target="_blank"><i class="fab fa-twitter-square"></i></a>
+						<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+						<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-12 copy">
+				<p>&copy;MGN DEV. All Rights Reserved. 2019</p>
+			</div>
+		</div>
+	</div>
 
 	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="/js/script.js"></script>

@@ -1,9 +1,14 @@
 body {
-    background-color: lightgrey;
+    background-color: rgb(66, 104, 124, .3);
 }
 .navbar, .box {
-    background-color: rgba(160, 185, 192, .4);
+    background-color: rgb(132, 165, 184, .6);
     font-family: 'Trirong', serif;
+    font-weight: 400;
+}
+
+.btn {
+    color: black;
 }
 
 /* jumbotron */
@@ -15,11 +20,16 @@ body {
 }
 
 .box {
-    margin-top: 200px;
+    margin-top: 75px;
     text-align: center;
     color: black;
     padding-top: 2%;
     padding-bottom: 2%;
+    line-height: 1;
+    width: 700px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 160px;
 }
 
 .box h1 {
@@ -31,13 +41,25 @@ body {
 }
 
 /* how we work */
+.work-container, .about-container, .contact-container {
+    margin-top: 140px;
+}
+
+.work-row {
+    margin-top: 75px;
+    margin-bottom: 125px;
+}
+
 .icon {
     height: 100px;
     width: 100px;
 }
 
-.about-jumbo {
-    background-image: url(/img/bitwise.jpg)
+.jumbotron {
+    background-image: url(/img/bitwise.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
 }
 
 .col-icon h1{
@@ -59,6 +81,14 @@ body {
     font-family: 'Trirong', serif;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
 /* about section */
 
 .about-container {
@@ -72,4 +102,82 @@ body {
 
 .work-h1 {
     text-align: center;
+}
+
+.con-me {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+margin-bottom: 50px;
+}
+
+/* contact section */
+
+/* .container .contact-container {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 500px;
+    width: 100%;
+} */
+
+.contact-container {
+    margin-bottom: 100px;
+}
+
+address {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+input[text=type], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+label {
+    color: white;
+}
+
+form {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    height: 400px;
+}
+
+/* footer */
+
+.input, .social, .copy {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.fab {
+    font-size: 3em;
+    margin-right: 15px;
+}
+
+.fa-facebook-square {
+    color: lightseagreen;
+}
+
+.fa-instagram {
+    color: #DD2A7B;
+}
+
+.fa-twitter-square {
+    color: #086488;
+}
+
+.copy {
+    text-align: center;
+    font-family: 
 }
